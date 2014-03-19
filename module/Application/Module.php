@@ -9,10 +9,12 @@
 
 namespace Application;
 
+use Zend\ModuleManager\Feature\ServiceProviderInterface;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+use Zend\ServiceManager\ServiceLocatorInterface;
 
-class Module
+class Module implements ServiceProviderInterface
 {
     public function onBootstrap(MvcEvent $e)
     {
@@ -25,6 +27,10 @@ class Module
     public function getConfig()
     {
         return include __DIR__ . '/config/module.config.php';
+    }
+
+    public function getServiceConfig() {
+        return include __DIR__ . '/config/service.config.php';
     }
 
     public function getAutoloaderConfig()

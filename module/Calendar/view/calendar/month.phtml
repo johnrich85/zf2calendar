@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('../module/Calendar/Public/css/styles.css'); ?>" />
+<table class="calendar">
+
+    <?php echo $this->renderChildModel("header"); ?>
+
+    <tr>
+
+        <?php foreach($days as $day) : ?>
+
+            <td>
+                <?php echo $day['day'];?>
+            </td>
+
+            <?php if (isset($day['end_week'])) echo "</tr><tr>"?>
+
+        <?php endforeach; ?>
+
+    </tr>
+
+</table>
+
