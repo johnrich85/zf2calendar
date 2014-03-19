@@ -5,7 +5,7 @@ progress.
 
 To do list:
 =================================================================================
-Finish unit testing
-Finish day provider implementation.
-Document classes.
-General tidy up & refactor.
+1. Finish unit testing.
+2. Finish day provider implementation.
+3. Document classes.
+4. General tidy up & refactor.

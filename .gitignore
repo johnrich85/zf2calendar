@@ -7,6 +7,9 @@ nbproject
 .project
 .settings
 composer.lock
+init_autoloader.php
+.gitmodules
+LICENSE.txt
 vendor/bin
 config
 data
@@ -14,3 +17,4 @@ public
 module/Album
 module/Application
 module/FooBlog
+vendor
