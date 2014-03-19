@@ -11,5 +11,5 @@ namespace Calendar\Providers;
 
 
 interface DayProviderInterface {
-    public function createDay($day);
+    public function fetchDay($day);
 }

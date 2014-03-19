@@ -52,7 +52,7 @@ class Calendar {
 
     public function getDay($day) {
         //Todo: throw exception if month/day not set.
-        return $this->dayProvider->createDay($day, $this->month, $this->year);
+        return $this->dayProvider->fetchDay($day, $this->month, $this->year);
     }
 
     public function setMonth($month) {

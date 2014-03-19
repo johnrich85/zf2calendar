@@ -12,7 +12,7 @@ namespace Calendar\Providers;
 
 class DayProvider implements DayProviderInterface{
 
-    public function createDay($day) {
+    public function fetchDay($day) {
         //to do
 
         return array(

@@ -30,7 +30,7 @@ class Year {
         12 => "December",
     );
 
-    public function __construct($year = 2013) {
+    public function __construct($year) {
         $this->year = $year;
     }
 
